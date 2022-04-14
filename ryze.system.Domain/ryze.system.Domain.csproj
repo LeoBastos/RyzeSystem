@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\ryze.system.Crosscuting\ryze.system.Common.csproj" />
+    <ProjectReference Include="..\ryze.system.DomainNotification\ryze.system.DomainNotification.csproj" />
   </ItemGroup>
 
 </Project>
