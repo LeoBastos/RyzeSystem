@@ -1,5 +1,7 @@
 ﻿using ryze.system.Common.Enums;
+using ryze.system.Domain.Entities.ItensPedido;
 using ryze.system.DomainNotification.Validations;
+using System;
 
 namespace ryze.system.Domain.Entities.Produtos
 {
@@ -15,7 +17,7 @@ namespace ryze.system.Domain.Entities.Produtos
         public int Estoque { get; private set; }
         public string Imagem { get; private set; }
         public TipoProduto TipoProduto { get; private set; }
-        public bool IsAtivo { get; private set; }
+        public bool IsAtivo { get; private set; }       
 
 
         public void Update(string nome, decimal preco, int estoque, string imagem, TipoProduto tipoProduto, bool isAtivo)

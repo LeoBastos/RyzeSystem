@@ -8,6 +8,6 @@ namespace ryze.system.Domain.Interfaces.Clientes
     public interface IClienteRepository : IRepository<Cliente>
     {
         Task<IEnumerable<Cliente>> GetClientesAsync();
-        Task<Cliente> GetClienteByIdAsync(Guid id);
+        Task<Cliente> GetClienteByIdAsync(Guid id);        
     }
 }
