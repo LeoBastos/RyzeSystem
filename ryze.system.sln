@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presetetion", "1 - Presetetion", "{222D11DD-3EFE-4A68-81A3-DECFAF0331B5}"
 EndProject
@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - DomainCore", "4 - Domai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infrastructure", "5 - Infrastructure", "{DEE08D91-DC55-40C8-A3AF-FA00FC7C0660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ryze.system.Repository", "ryze.system.Repository\ryze.system.Repository.csproj", "{26174E69-B57F-4399-8E65-145509B64FA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ryze.system.Repository", "ryze.system.Repository\ryze.system.Repository.csproj", "{26174E69-B57F-4399-8E65-145509B64FA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ryze.system.IoC", "ryze.system.IoC\ryze.system.IoC.csproj", "{7BF123B0-C8DB-4DD5-A917-10F7D928E907}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ryze.system.IoC", "ryze.system.IoC\ryze.system.IoC.csproj", "{7BF123B0-C8DB-4DD5-A917-10F7D928E907}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{6E6C7423-E3CE-46AC-AE8F-BF087DA54AEC}"
 EndProject
@@ -21,19 +21,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - IoC", "5.2 - IoC", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.3 - Crosscuting", "5.3 - Crosscuting", "{28E9B174-CDA7-4AFD-BFD5-85D4B01B18CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ryze.system.Crosscuting", "ryze.system.Crosscuting\ryze.system.Crosscuting.csproj", "{5D255267-153E-4465-82B6-B62A930FB1A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ryze.system.Common", "ryze.system.Crosscuting\ryze.system.Common.csproj", "{5D255267-153E-4465-82B6-B62A930FB1A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Domain", "4.1 - Domain", "{D32DA52A-A427-4E0E-8851-A8ABEC121F19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ryze.system.Domain", "ryze.system.Domain\ryze.system.Domain.csproj", "{0A19D01C-4E8E-4239-8CCF-32D789F930D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ryze.system.Domain", "ryze.system.Domain\ryze.system.Domain.csproj", "{0A19D01C-4E8E-4239-8CCF-32D789F930D8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - DomainNotification", "4.2 - DomainNotification", "{F729FD9F-F7CB-4F9B-A01D-A060248254F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ryze.system.DomainNotification", "ryze.system.DomainNotification\ryze.system.DomainNotification.csproj", "{0609C09B-220B-4619-A2BB-D0AE63775AFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ryze.system.DomainNotification", "ryze.system.DomainNotification\ryze.system.DomainNotification.csproj", "{0609C09B-220B-4619-A2BB-D0AE63775AFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ryze.system.AppService", "ryze.system.AppService\ryze.system.AppService.csproj", "{8D386484-FEA8-404D-933F-2012F933D5EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ryze.system.AppService", "ryze.system.AppService\ryze.system.AppService.csproj", "{8D386484-FEA8-404D-933F-2012F933D5EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ryze.system.Mvc", "ryze.system.Mvc\ryze.system.Mvc.csproj", "{66B48208-AADC-47E4-82F3-22F3810E494B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ryze.system.Mvc", "ryze.system.Mvc\ryze.system.Mvc.csproj", "{66B48208-AADC-47E4-82F3-22F3810E494B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

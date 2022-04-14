@@ -1,12 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ryze.system.Domain
 {
-    class BaseEntity
+    public abstract class BaseEntity
     {
+        protected BaseEntity()
+        {
+            _Insert = DateTime.Now;
+            Id = Guid.NewGuid();
+        }
+
+        public Guid Id { get; set; }
+        public DateTime _Insert { get; set; }
+        public DateTime _Update { get; private set; }
+        public DateTime _Deleted { get; private set; }
+
+        protected void SetUpdate()
+        {
+            _Update = DateTime.Now;
+        }
     }
 }
