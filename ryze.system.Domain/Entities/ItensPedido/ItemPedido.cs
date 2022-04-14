@@ -2,6 +2,7 @@
 using ryze.system.Domain.Entities.Produtos;
 using ryze.system.DomainNotification.Validations;
 using System;
+using System.Collections.Generic;
 
 namespace ryze.system.Domain.Entities.ItensPedido
 
@@ -13,14 +14,14 @@ namespace ryze.system.Domain.Entities.ItensPedido
             ValidateDomain(pedidoId, produtoId, quantidade, valor, desconto);
         }
 
-        public Guid PedidoId { get; private set; }
-        public Guid ProdutoId { get; private set; }
+        public Guid PedidoId { get; set; }
+        public Guid ProdutoId { get; set; }
         public int Quantidade { get; private set; }
         public decimal Valor { get; private set; }
         public decimal Desconto { get; private set; }
 
         public Pedido Pedido { get; set; }
-        public Produto Produto { get; set; }
+        public IEnumerable<Produto> Produtos { get; set; }
 
 
         public void Update(Guid pedidoId, Guid produtoId, int quantidade, decimal valor, decimal desconto)
