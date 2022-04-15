@@ -1,6 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ryze.system.AppService.Interfaces.Clientes;
+using ryze.system.AppService.Interfaces.ItensPedido;
+using ryze.system.AppService.Interfaces.Pedidos;
+using ryze.system.AppService.Interfaces.Produtos;
+using ryze.system.AppService.Mappings;
+using ryze.system.AppService.Services.Clientes;
+using ryze.system.AppService.Services.ItensPedidos;
+using ryze.system.AppService.Services.Pedidos;
+using ryze.system.AppService.Services.Produtos;
 using ryze.system.Domain.Interfaces.Clientes;
 using ryze.system.Domain.Interfaces.ItensPedido;
 using ryze.system.Domain.Interfaces.Pedidos;
@@ -27,6 +36,12 @@ namespace ryze.system.IoC
             services.AddScoped<IPedidoRepository, PedidoRepository>();
             services.AddScoped<IItemPedidoRepository, ItemPedidoRepository>();
             #endregion                     
+
+            services.AddScoped<IClienteService, ClienteService>();
+            services.AddScoped<IProdutoService, ProdutoService>();
+            services.AddScoped<IPedidoService, PedidoService>();
+            services.AddScoped<IItemPedidoService, ItemPedidoService>();
+            services.AddAutoMapper(typeof(AppServiceMappings));
 
             return services;
         }
