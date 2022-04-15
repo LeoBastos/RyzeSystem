@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Mappings\" />
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ryze.system.Crosscuting\ryze.system.Common.csproj" />
+    <ProjectReference Include="..\ryze.system.Domain\ryze.system.Domain.csproj" />
   </ItemGroup>
 
 </Project>
